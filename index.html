@@ -1,8 +1,38 @@
 ---
 layout: default
-title: Neel Gupta
+title: Home
 ---
-<div class="blurb">
-	<h1>I'm Neel!</h1>
-	<p>I'm Neel.</a></p>
-</div><!-- /.blurb -->
+
+<section id="bio">
+  <h2>Bio</h2>
+  <p>
+    I am a researcher working on literary history, cultural institutions,
+    and computational approaches to large-scale textual corpora.
+  </p>
+</section>
+
+<section id="papers">
+  <h2>Papers</h2>
+  <ul class="papers">
+    {% for paper in site.data.papers %}
+      <li>
+        {{ paper.authors }} ({{ paper.year }}).
+        <em>{{ paper.title }}</em>.
+        {% if paper.pdf %}
+          <a href="{{ paper.pdf | relative_url }}">PDF</a>
+        {% endif %}
+        {% if paper.url %}
+          <a href="{{ paper.url }}">Link</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Email:
+	ngupta1 at uw dot edu 
+  </p>
+</section>
