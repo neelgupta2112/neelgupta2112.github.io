@@ -122,6 +122,11 @@ ul.papers li {
     border-left: 4px solid var(--secondary-color);
     border-radius: 4px;
     transition: all 0.3s ease;
+    min-height: 1px;
+}
+
+ul.papers li:empty {
+    display: none;
 }
 
 ul.papers li:hover {
