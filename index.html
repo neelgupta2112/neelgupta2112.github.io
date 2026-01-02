@@ -6,26 +6,17 @@ title: Home
 <section id="bio">
   <h2>Bio</h2>
   <p>
-    I am a researcher working on literary history, cultural institutions,
-    and computational approaches to large-scale textual corpora.
+    I am a Ph.D student at the University of Washington working with Professor Melanie Walsh on topics in cultural analytics.
+	I study contemporary culture with both traditional and computational methods. I think a lot about the relationship between economics and aesthetric production, the epistemologies of data science in the humanities, and the multiplicities of genres, structures and mediums that characterize modern storytelling.
+	Before starting my Ph.D, I worked as a data scientist in marketing analytics, and I studied English Literature, Mathematics, and Computer Science as part of the Honors Program at Swarthmore College.
+	Feel free to reach out over email if you'd like to get in touch. 
   </p>
 </section>
 
 <section id="papers">
   <h2>Papers</h2>
   <ul class="papers">
-    {% for paper in site.data.papers %}
-      <li>
-        {{ paper.authors }} ({{ paper.year }}).
-        <em>{{ paper.title }}</em>.
-        {% if paper.pdf %}
-          <a href="{{ paper.pdf | relative_url }}">PDF</a>
-        {% endif %}
-        {% if paper.url %}
-          <a href="{{ paper.url }}">Link</a>
-        {% endif %}
-      </li>
-    {% endfor %}
+    {% bibliography %}
   </ul>
 </section>
 

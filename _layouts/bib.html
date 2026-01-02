@@ -1,0 +1,9 @@
+<li>
+  {{ reference }}
+  {% if entry.file %}
+    <a href="{{ entry.file | relative_url }}">PDF</a>
+  {% endif %}
+  {% if entry.url %}
+    <a href="{{ entry.url }}">Link</a>
+  {% endif %}
+</li>
