@@ -12,5 +12,6 @@ plugins:
 scholar:
   style: apa
   locale: en
+  source: ./_bibliography
   bibliography: papers.bib
   bibliography_template: bib
