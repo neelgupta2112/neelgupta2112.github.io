@@ -5,85 +5,66 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-    color: #333;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #222;
     background: #fff;
-    line-height: 1.6;
-    font-size: 1rem;
-}
-
-header {
-    background: none;
-    color: #000;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-    box-shadow: none;
-    border-bottom: 1px solid #eee;
-}
-
-header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    text-align: center;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 2rem 3rem;
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 0 2rem;
 }
 
-nav.nav {
-    display: none;
+h1 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #000;
-    margin: 2rem 0 1rem;
+    margin: 1.5rem 0 0.8rem;
     padding-bottom: 0;
     border-bottom: none;
     display: block;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #222;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 section {
-    margin-bottom: 2rem;
-}
-
-section#bio p {
-    font-size: 1rem;
-    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 a {
     color: #0066cc;
     text-decoration: underline;
-    transition: color 0.2s ease;
 }
 
 a:hover {
     color: #0052a3;
-    text-decoration: underline;
 }
 
 footer {
-    border-top: 1px solid #eee;
-    margin-top: 3rem;
-    padding-top: 1.5rem;
-    text-align: center;
-    color: #999;
+    border-top: none;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: left;
+    color: #666;
     font-size: 0.9rem;
     background: none;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 ul.papers {
@@ -94,16 +75,12 @@ ul.papers {
 
 ul.papers li {
     background: none;
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
     margin-bottom: 0;
     border-left: none;
     border-radius: 0;
     transition: none;
     min-height: auto;
-    border-bottom: 1px solid #eee;
-}
-
-ul.papers li:last-child {
     border-bottom: none;
 }
 
@@ -111,18 +88,13 @@ ul.papers li:empty {
     display: none;
 }
 
-ul.papers li:hover {
-    box-shadow: none;
-    transform: none;
-}
-
 ul.posts {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.95rem;
     list-style: none;
 }
 
 ul.posts li {
     list-style: none;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
