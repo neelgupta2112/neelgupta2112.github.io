@@ -15,3 +15,5 @@ scholar:
   source: ./_bibliography
   bibliography: papers.bib
   bibliography_template: bib
+  sort_by: year,month
+  order: descending
