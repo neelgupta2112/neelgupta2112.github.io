@@ -15,3 +15,4 @@ scholar:
   source: ./_bibliography
   bibliography: papers.bib
   bibliography_template: bib
+  suppress_defaults: true
