@@ -1,7 +1,7 @@
 <li>
-  {{ reference }}
+  {{ reference | remove: entry.doi }}
   {% if entry.doi %}
-    <a href="https://doi.org/{{ entry.doi }}" target="_blank">{{ entry.doi }}</a>
+    <a href="https://doi.org/{{ entry.doi }}" target="_blank">DOI: {{ entry.doi }}</a>
   {% endif %}
   {% if entry.file %}
     <a href="{{ entry.file | relative_url }}">PDF</a>
