@@ -1,5 +1,5 @@
 <li>
-  {{ reference | remove: "https://doi.org/" | remove: entry.doi }}
+  {{ reference | remove: "https://doi.org/" | remove: entry.doi | remove: entry.url }}
   {% if entry.doi %}
     <a href="https://doi.org/{{ entry.doi }}" target="_blank">DOI: {{ entry.doi }}</a>
   {% endif %}
