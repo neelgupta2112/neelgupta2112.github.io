@@ -75,7 +75,7 @@ footer {
     padding-bottom: 1rem;
 }
 
-ul.papers, ul.other_writing, ol.bibliography {
+ul.papers, ul.other_writing, ul.media, ul.bibliography, ol.bibliography {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -87,7 +87,7 @@ ul.papers, ul.other_writing, ol.bibliography {
     padding: 0;
 }
 
-ul.papers li {
+ul.papers li, ul.other_writing li, ul.media li {
     background: none;
     padding: 0.5rem 0;
     margin-bottom: 0;
@@ -98,7 +98,7 @@ ul.papers li {
     border-bottom: none;
 }
 
-ul.papers li:empty {
+ul.papers li:empty, ul.other_writing li:empty {
     display: none;
 }
 
